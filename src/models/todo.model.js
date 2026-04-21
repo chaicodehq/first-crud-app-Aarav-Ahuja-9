@@ -35,7 +35,7 @@ const todoSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 todoSchema.index({ completed: 1, createdAt: -1 });
